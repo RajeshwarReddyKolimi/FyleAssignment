@@ -7,9 +7,7 @@ let fetchUserDetails = async () => {
     try {
         let res = await fetch(`https://api.github.com/users/${username}`, {
             method: "GET",
-            headers: {
-                Authorization: `Bearer ${token}`,
-            },
+            headers: { Authorization: `Bearer ${process.env.token}` },
         });
         if (res.ok) {
             data = await res.json();

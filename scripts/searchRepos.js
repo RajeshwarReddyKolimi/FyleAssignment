@@ -24,9 +24,7 @@ let searchRepos = async () => {
         const repoURL = `https://api.github.com/search/repositories?q=user:${username} ${currentQuery}&per_page=${repoLimit}&page=${currentPage}`;
         let res = await fetch(repoURL, {
             method: "GET",
-            headers: {
-                Authorization: `Bearer ${token}`,
-            },
+            headers: { Authorization: `Bearer ${process.env.token}` },
         });
         if (res.ok) {
             handleRepoSuccess();
