@@ -5,7 +5,7 @@ let fetchTopics = async (url) => {
     try {
         let res = await fetch(url, {
             method: "GET",
-            headers: { Authorization: `Bearer ${process.env.token}` },
+            headers: { Authorization: `Bearer ${token}` },
         });
         if (res.ok) {
             topics = await res.json();

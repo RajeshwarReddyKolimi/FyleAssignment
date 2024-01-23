@@ -1,7 +1,7 @@
 :root {
     --background-color: #191919;
     --button-color: #2192ff;
-    --button-hover-color: #1d8ffa;
+    --button-hover-color: #0e7ce4;
     --text-color: white;
     --border-color: rgb(66, 66, 66);
     --secondary-text-color: rgb(150, 150, 150);
@@ -364,14 +364,15 @@ select {
     align-items: center;
 }
 .footer-item {
-    padding: 0.5rem;
+    font-size: 16px;
+    padding: 1rem;
 }
 .footer-links {
     display: flex;
     flex-direction: row;
 }
 .fa-footer-icon {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 /* Responsive */
@@ -438,7 +439,7 @@ select {
 
 .button-disabled {
     pointer-events: none;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 .button-disabled:hover {
     background-color: initial;
