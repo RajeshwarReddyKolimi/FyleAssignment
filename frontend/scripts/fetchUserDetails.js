@@ -5,7 +5,7 @@ const userDetails = document.getElementById("user-details");
 let fetchUserDetails = async () => {
     handleUserLoading();
     try {
-        let res = await fetch(`http://localhost:3000`, {
+        let res = await fetch(`https://fyle-assignment-backend.onrender.com`, {
             headers: {
                 "Content-Type": "application/json",
             },

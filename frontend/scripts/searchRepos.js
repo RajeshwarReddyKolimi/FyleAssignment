@@ -22,7 +22,7 @@ let searchRepos = async () => {
     handleRepoLoading();
     try {
         const repoURL = `https://api.github.com/search/repositories?q=user:${username} ${currentQuery}&per_page=${repoLimit}&page=${currentPage}`;
-        let res = await fetch("http://localhost:3000", {
+        let res = await fetch("https://fyle-assignment-backend.onrender.com", {
             headers: {
                 "Content-Type": "application/json",
             },

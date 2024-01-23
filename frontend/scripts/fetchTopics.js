@@ -3,7 +3,7 @@
 let topics = [];
 let fetchTopics = async (url) => {
     try {
-        let res = await fetch("http://localhost:3000", {
+        let res = await fetch("https://fyle-assignment-backend.onrender.com", {
             headers: {
                 "Content-Type": "application/json",
             },
