@@ -5,8 +5,7 @@ const app = express();
 
 app.use(
     cors({
-        origin: "https://fyle-assignment-github-listing-page.netlify.app/",
-        credentials: true,
+        origin: "https://fyle-assignment-github-listing-page.netlify.app",
     })
 );
 
