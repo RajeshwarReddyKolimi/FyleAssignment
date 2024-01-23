@@ -10,6 +10,7 @@ This is a website that displays the public GitHub repositories belonging to a sp
 #### Theme Changing
 #### Responsive
 #### Error Handling
+#### Backend API
 
 ## Implementation
 
@@ -21,6 +22,8 @@ This is a website that displays the public GitHub repositories belonging to a sp
 #### JavaScript (Vanilla)
 - variables, functions, localStorage, eventListeners, DOM, fetch, errorHandling, async, etc.
 #### GitHub REST API
+#### Node.js and Express
+- The unauthorized version of github REST API has rate limit of 60 requests per hour. So I have done authorization and as I cannot store api keys on client side, I used a simple backend server which hides the keys and calls github API and return the fetched data.
 #### Other
 - Fontawesome for icons
 - Github for repositing
@@ -75,4 +78,6 @@ It displays the loaders when fetching data from API and hides at other times.
 #### pagination.js, paginator.js:
 They both adds pagination, allowing users to navigate to any page directly, ot next page, to previous page, to first page, to last page.
 
+#### backend/index.js
+Allows storing github Personal Access Tokens without exposing to users. It fetches data from github API and returns the response to frontend.
 ### Happy Coding
